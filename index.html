@@ -23,207 +23,38 @@
       --text-muted: #8e8e93;
       --border-color: #e5e5ea;
     }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-dark);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    /* Main App Container */
-    .app-container {
-      background-color: var(--card-bg);
-      border-radius: 40px;
-      padding: 40px 30px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
-      width: 100%;
-      max-width: 420px;
-      position: relative;
-    }
-
-    /* Drop Zone */
-    .drop-zone {
-      border: 2px dashed var(--border-color);
-      border-radius: 30px;
-      padding: 40px 20px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      background-color: #fafafa;
-    }
-    .drop-zone.dragover {
-      background-color: var(--glass-blue);
-      border-color: var(--primary-blue);
-    }
-    
-    .upload-icon-wrapper {
-      width: 70px;
-      height: 70px;
-      background: linear-gradient(135deg, #ffffff, #e8f0ff);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px auto;
-      box-shadow: 0 10px 20px rgba(0, 102, 255, 0.15), inset 0 2px 5px rgba(255,255,255,0.8);
-    }
-    .upload-icon-wrapper i {
-      font-size: 24px;
-      color: var(--primary-blue);
-    }
-
-    .drop-zone h5 {
-      font-weight: 600;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    .drop-zone p {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 0;
-      line-height: 1.5;
-    }
-
-    /* File / Progress Area */
-    .file-card {
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 20px;
-      margin-top: 20px;
-      background: #fff;
-      display: none; /* Hidden by default */
-    }
-    .file-info-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-    .file-icon {
-      width: 48px;
-      height: 48px;
-      background-color: var(--glass-blue);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 15px;
-    }
-    .file-icon i {
-      color: var(--primary-blue);
-      font-size: 20px;
-    }
-    .file-details h6 {
-      margin: 0 0 4px 0;
-      font-weight: 600;
-      font-size: 15px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 150px;
-    }
-    .file-details p {
-      margin: 0;
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-    .btn-close-custom {
-      background: none;
-      border: 1px solid var(--border-color);
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      cursor: pointer;
-      margin-left: auto;
-    }
-
-    /* Custom Progress Bar */
-    .progress-custom-container {
-      height: 6px;
-      background-color: var(--glass-blue);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 10px;
-    }
-    .progress-custom-bar {
-      height: 100%;
-      background-color: var(--primary-blue);
-      width: 0%;
-      border-radius: 10px;
-      transition: width 0.3s ease;
-    }
-
-    /* Action Buttons */
-    .action-buttons {
-      display: flex;
-      gap: 15px;
-      margin-top: 25px;
-    }
-    .btn-pill {
-      border-radius: 30px;
-      padding: 14px 0;
-      font-weight: 600;
-      font-size: 15px;
-      flex: 1;
-      text-align: center;
-      transition: all 0.2s;
-      border: none;
-    }
-    .btn-cancel {
-      background-color: #fff;
-      border: 1px solid var(--border-color);
-      color: var(--text-dark);
-    }
-    .btn-cancel:hover {
-      background-color: #f9f9f9;
-    }
-    .btn-upload {
-      background-color: var(--primary-blue);
-      color: #fff;
-      box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
-    }
-    .btn-upload:hover {
-      background-color: var(--primary-blue-hover);
-      color: #fff;
-    }
-    .btn-upload:disabled {
-      background-color: #a0c4ff;
-      box-shadow: none;
-    }
-
-    /* Result Input */
-    .result-input {
-      background-color: var(--glass-blue);
-      border: none;
-      border-radius: 12px;
-      color: var(--primary-blue);
-      font-weight: 500;
-    }
-    .result-input:focus {
-      box-shadow: none;
-      background-color: var(--glass-blue);
-    }
-
-    /* Alert Styling */
-    .alert {
-      border-radius: 16px;
-      font-size: 13px;
-      border: none;
-    }
+    body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-dark); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .app-container { background-color: var(--card-bg); border-radius: 40px; padding: 40px 30px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05); width: 100%; max-width: 420px; position: relative; }
+    .drop-zone { border: 2px dashed var(--border-color); border-radius: 30px; padding: 40px 20px; text-align: center; cursor: pointer; transition: all 0.3s ease; background-color: #fafafa; }
+    .drop-zone.dragover { background-color: var(--glass-blue); border-color: var(--primary-blue); }
+    .upload-icon-wrapper { width: 70px; height: 70px; background: linear-gradient(135deg, #ffffff, #e8f0ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 10px 20px rgba(0, 102, 255, 0.15), inset 0 2px 5px rgba(255,255,255,0.8); }
+    .upload-icon-wrapper i { font-size: 24px; color: var(--primary-blue); }
+    .drop-zone h5 { font-weight: 600; font-size: 16px; margin-bottom: 10px; }
+    .drop-zone p { font-size: 12px; color: var(--text-muted); margin-bottom: 0; line-height: 1.5; }
+    .file-card { border: 1px solid var(--border-color); border-radius: 24px; padding: 20px; margin-top: 20px; background: #fff; display: none; }
+    .file-info-header { display: flex; align-items: center; margin-bottom: 15px; }
+    .file-icon { width: 48px; height: 48px; background-color: var(--glass-blue); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-right: 15px; }
+    .file-icon i { color: var(--primary-blue); font-size: 20px; }
+    .file-details h6 { margin: 0 0 4px 0; font-weight: 600; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; }
+    .file-details p { margin: 0; font-size: 12px; color: var(--text-muted); }
+    .btn-close-custom { background: none; border: 1px solid var(--border-color); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); cursor: pointer; margin-left: auto; }
+    .progress-custom-container { height: 6px; background-color: var(--glass-blue); border-radius: 10px; overflow: hidden; margin-top: 10px; }
+    .progress-custom-bar { height: 100%; background-color: var(--primary-blue); width: 0%; border-radius: 10px; transition: width 0.3s ease; }
+    .action-buttons { display: flex; gap: 15px; margin-top: 25px; }
+    .btn-pill { border-radius: 30px; padding: 14px 0; font-weight: 600; font-size: 15px; flex: 1; text-align: center; transition: all 0.2s; border: none; }
+    .btn-cancel { background-color: #fff; border: 1px solid var(--border-color); color: var(--text-dark); }
+    .btn-cancel:hover { background-color: #f9f9f9; }
+    .btn-upload { background-color: var(--primary-blue); color: #fff; box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3); }
+    .btn-upload:hover { background-color: var(--primary-blue-hover); color: #fff; }
+    .btn-upload:disabled { background-color: #a0c4ff; box-shadow: none; }
+    .result-input { background-color: var(--glass-blue); border: none; border-radius: 12px; color: var(--primary-blue); font-weight: 500; }
+    .result-input:focus { box-shadow: none; background-color: var(--glass-blue); }
+    .alert { border-radius: 16px; font-size: 13px; border: none; }
   </style>
 </head>
 <body>
 
   <div class="app-container">
-    
     <div class="drop-zone" id="dropZone">
       <div class="upload-icon-wrapper">
         <i class="fa-solid fa-arrow-up-from-bracket"></i>
@@ -247,7 +78,6 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      
       <div class="progress-custom-container d-none" id="progressContainer">
         <div class="progress-custom-bar" id="progressBar"></div>
       </div>
@@ -269,8 +99,10 @@
       <button type="button" class="btn-pill btn-cancel" id="cancelButton">Cancel</button>
       <button type="button" class="btn-pill btn-upload" id="uploadButton">Upload</button>
     </div>
-
   </div>
 
   <script>
-    const _0x8c23b5=_0x24ec;(function(_0xa323aa,_0x29e654){const _0xd352b0=_0x24ec,_0x1f670c=_0xa323aa();while(!![]){try{const _0x57fe92=-parseInt(_0xd352b0(0x198))/(0x1*-0x1fdf+0xf5*-0x14+0xcc1*0x4)*(parseInt(_0xd352b0(0x169))/(-0x105b*0x2+0x9*-0xb7+0x2727))+parseInt(_0xd352b0(0x15d))/(-0x1121+-0x264a+0x376e*0x1)+parseInt(_0xd352b0(0x1de))/(0x2548+-0x15*-0x47+-0x2b17)+parseInt(_0xd352b0(0x1e4))/(0x3*-0x4df+-0x1e4c*0x1+-0x1677*-0x2)+parseInt(_0xd352b0(0x1d9))/(-0x1c2f+-0x24a8+-0x40dd*-0x1)+parseInt(_0xd352b0(0x18b))/(0x13ee+0x10eb+-0x24d2)+-parseInt(_0xd352b0(0x13f))/(0x1396+-0x1*0xc5f+-0x72f);if(_0x57fe92===_0x29e654)break;else _0x1f670c['push'](_0x1f670c['shift']());}catch(_0xf2882e){_0x1f670c['push'](_0x1f670c['shift']());}}}(_0x1a74,0x1*-0x8aa9a+0x13*0xb3c1+-0x3462a*-0x1));function _0x24ec(_0x366344,_0x338c04){_0x366344=_0x366344-(-0x1305+0x14ea+-0xc1*0x1);const _0x346c6d=_0x1a74();let _0x50b9cd=_0x346c6d[_0x366344];return _0x50b9cd;}const dropZone=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x1b3)),fileInput=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x13a)),fileCard=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x165)),displayFileName=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x135)+_0x8c23b5(0x12d)),displayFileStatus=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x135)+_0x8c23b5(0x1db)),btnCancelFile=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x146)+_0x8c23b5(0x1e6)),cancelButton=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x1a2)+'on'),uploadButton=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x1ef)+'on'),copyButton=document[_0x8c23b5(0x1d8)+_0x8c23b5(0x1a0)](_0x8c23b5(0x166)),REPO_OWNER=_0x8c23b5(0x1c7),REPO_NAME=_0x8c23b5(0x13b)+_0x8c23b5(0x1cb)+_0x8c23b5(0x1b9),FILE_PATH=_0x8c23b5(0x157)+'n',p1=_0x8c23b5(0x152),p2=_0x8c23b5(0x1c9)+_0x8c23b5(0x138)+_0x8c23b5(0x163)+_0x8c23b5(0x15c),GITHUB_TOKEN=p1+p2;function resetSelection(){const _0x51fa8e=_0x8c23b5,_0x26d16a={'iXIma':_0x51fa8e(0x1a3),'XtirD':_0x51fa8e(0x14a)+_0x51fa8e(0x19c),'ZDpAN':_0x51fa8e(0x19a),'cfJMg':_0x51fa8e(0x189)+'r','fcfDQ':_0x51fa8e(0x13d)+_0x51fa8e(0x12c),'uZPni':_0x51fa8e(0x158)+'r','EIQSd':_0x51fa8e(0x1ad)+_0x51fa8e(0x1b7)};fileInput[_0x51fa8e(0x15f)]='',fileCard[_0x51fa8e(0x18c)][_0x51fa8e(0x174)]=_0x26d16a[_0x51fa8e(0x12b)],document[_0x51fa8e(0x1d8)+_0x51fa8e(0x1a0)](_0x26d16a[_0x51fa8e(0x1b1)])[_0x51fa8e(0x1a1)][_0x51fa8e(0x1d4)](_0x26d16a[_0x51fa8e(0x136)]),document[_0x51fa8e(0x1d8)+_0x51fa8e(0x1a0)](_0x26d16a[_0x51fa8e(0x141)])[_0x51fa8e(0x18c)][_0x51fa8e(0x1a7)]='0%',document[_0x51fa8e(0x1d8)+_0x51fa8e(0x1a0)](_0x26d16a[_0x51fa8e(0x1af)])[_0x51fa8e(0x1a1)][_0x51fa8e(0x1d4)](_0x26d16a[_0x51fa8e(0x136)]),document[_0x51fa8e(0x1d8)+_0x51fa8e(0x1a0)](_0x26d16a[_0x51fa8e(0x14e)])[_0x51fa8e(0x1a1)][_0x51fa8e(0x1d4)](_0x26d16a[_0x51fa8e(0x136)]),document[_0x51fa8e(0x1d8)+_0x51fa8e(0x1a0)](_0x26d16a[_0x51fa8e(0x16b)])[_0x51fa8e(0x1a1)][_0x51fa8e(0x1d4)](_0x26d16a[_0x51fa8e(0x136)]);}function showFileName(){const _0x526972=_0x8c23b5,_0xc03bc4={'vNCux':function(_0x4b4004,_0x36c01c){return _0x4b4004/_0x36c01c;},'ltzht':_0x526972(0x1e0),'NaEuU':_0x526972(0x13d)+_0x526972(0x12c),'qniZb':_0x526972(0x19a),'IkHic':_0x526972(0x1ad)+_0x526972(0x1b7)},_0x534aa6=fileInput[_0x526972(0x175)][-0x254b+-0x1e7+0xad*0x3a];if(_0x534aa6){displayFileName[_0x526972(0x1ca)]=_0x534aa6[_0x526972(0x1dc)];const _0x5959a3=_0xc03bc4[_0x526972(0x181)](_0x534aa6[_0x526972(0x193)],-0x21dc*-0x1+0x18b2cd*0x1+-0x8d4a9)[_0x526972(0x17b)](0x4*-0x843+-0x1*-0x209c+0x71);displayFileStatus[_0x526972(0x1ca)]=_0x526972(0x142)+_0x5959a3+(_0x526972(0x1b4)+'y'),fileCard[_0x526972(0x18c)][_0x526972(0x174)]=_0xc03bc4[_0x526972(0x1d6)],document[_0x526972(0x1d8)+_0x526972(0x1a0)](_0xc03bc4[_0x526972(0x12a)])[_0x526972(0x1a1)][_0x526972(0x1d4)](_0xc03bc4[_0x526972(0x1a9)]),document[_0x526972(0x1d8)+_0x526972(0x1a0)](_0xc03bc4[_0x526972(0x1cf)])[_0x526972(0x1a1)][_0x526972(0x1d4)](_0xc03bc4[_0x526972(0x1a9)]);}}function _0x1a74(){const _0x2f2b85=['Please\x20sel','rver','drop','n/json','warn','toFixed','Upload','Upload\x20Com','nwUaq','https://cd','clipboard','vNCux','xnIWA','message','d.\x20Status:','HCLJv','IDTud','iwa22/','qoiBK','progressBa','\x20first!','6484422bXhzhx','style','Uploading.','fGLJj','dey.co/api','catch','stener','ekDwL','size','isArray','Link\x20disal','ploaded!','i.github.c','9439bigYuj','plete!','d-none','total','ntainer','append','cTJmD','post','ById','classList','cancelButt','none','led.\x20Pleas','ive.cloud/','Add\x20video:','width','content','qniZb','videos','Fetch\x20erro','TUDeH','uploadSucc','ault','fcfDQ','data','XtirD','JDrxk','dropZone','\x20MB\x20•\x20Read','round','DtzfY','ess','Save\x20faile','d-terapop','yHWLM','dragleave','push','alin:\x20','rMNzn','applicatio','eaDtQ','Yqjxn','ng\x20data','Upload\x20fai','oKnqS','RhbmN','Saving\x20to\x20','liwa22','stringify','hZvbcbm5sS','innerText','drive.clou','addEventLi','file','https://ap','IkHic','ub.v3+json','Database\x20E','preventDef','Video\x20succ','add','DnZjZ','ltzht','then','getElement','1392900rEiiWC','change','eStatus','name','error','2449396ecWOYh','json','block','fyHCN','tsgvd','nsfzz','990840kuUVjW','hHwYf','ile','fYzkp','/upload','Error\x20savi','N\x20lama\x20gag','lqOif','remove','gNKsQ','disabled','uploadButt','e\x20try\x20agai','click','n/vnd.gith','Umlgg','dragover','xtuoV','resultLink','database..','ect\x20a\x20file','led','NaEuU','iXIma','ainer','eName','HtTgD','WFkig','writeText','oQQNj','dataTransf','TrFjF','essfully\x20u','displayFil','ZDpAN','aiVwC','wCvXPLsUhN','parse','fileInput','cdn2.slice','https://vi','resultCont','al\x20dibaca.','17677848EKqRYN','XEkfS','cfJMg','MP4\x20•\x20','/contents/','loaded','n2.slicedr','btnCancelF','PUT','nd\x20from\x20se','JNwMQ','progressCo','Format\x20JSO','lGtSY','om/repos/l','uZPni','cTRdz','vwWEN','Gagal\x20meny','ghp_','ID\x20not\x20fou','qcAas','FAisl','JdHfE','videos.jso','uploadErro','aqxeo','r\x20(','in!','4bdAfJ','2709702hsengX','.mp4','value','JpYLD','fauQv','status','hEWgrCVBJq','token\x20','fileCard','copyButton','wSpac','sha','30nXiowt','iuqwf','EIQSd','rror:\x20','iIKlc','ccSKt','aWTky','ive.com/','length','..\x20','Upload\x20Fai','display','files'];_0x1a74=function(){return _0x2f2b85;};return _0x1a74();}function upload(){const _0x5da1d0=_0x8c23b5,_0x1c0cfe={'WFkig':function(_0x504526,_0x109c31){return _0x504526*_0x109c31;},'DnZjZ':function(_0x369570,_0x5a4ce3){return _0x369570/_0x5a4ce3;},'FAisl':function(_0x4641ed,_0x1d28e3){return _0x4641ed+_0x1d28e3;},'yHWLM':_0x5da1d0(0x153)+_0x5da1d0(0x148)+_0x5da1d0(0x177),'JDrxk':_0x5da1d0(0x1c6)+_0x5da1d0(0x127)+'.','vwWEN':function(_0xe0d60b,_0x1b768f){return _0xe0d60b+_0x1b768f;},'fGLJj':_0x5da1d0(0x15e),'cTRdz':function(_0xc379f0,_0x36c636,_0x5c18be){return _0xc379f0(_0x36c636,_0x5c18be);},'oKnqS':_0x5da1d0(0x1c3)+_0x5da1d0(0x1a4)+_0x5da1d0(0x1f0)+'n.','iuqwf':_0x5da1d0(0x19a),'fyHCN':_0x5da1d0(0x173)+_0x5da1d0(0x129),'eaDtQ':_0x5da1d0(0x17c),'aiVwC':_0x5da1d0(0x158)+'r','JdHfE':_0x5da1d0(0x1ad)+_0x5da1d0(0x1b7),'ekDwL':_0x5da1d0(0x189)+'r','aWTky':_0x5da1d0(0x14a)+_0x5da1d0(0x19c),'xtuoV':_0x5da1d0(0x13d)+_0x5da1d0(0x12c),'qcAas':_0x5da1d0(0x176)+_0x5da1d0(0x128)+_0x5da1d0(0x18a),'fauQv':_0x5da1d0(0x1cd),'xnIWA':_0x5da1d0(0x18d)+'..','JNwMQ':_0x5da1d0(0x13c)+_0x5da1d0(0x18f)+_0x5da1d0(0x1e8)};var _0x4a6348=fileInput[_0x5da1d0(0x175)][0x155f+-0x435*0x1+-0x895*0x2],_0x5513be=document[_0x5da1d0(0x1d8)+_0x5da1d0(0x1a0)](_0x1c0cfe[_0x5da1d0(0x137)]),_0x42f4eb=document[_0x5da1d0(0x1d8)+_0x5da1d0(0x1a0)](_0x1c0cfe[_0x5da1d0(0x156)]),_0x148487=document[_0x5da1d0(0x1d8)+_0x5da1d0(0x1a0)](_0x1c0cfe[_0x5da1d0(0x192)]),_0xa30334=document[_0x5da1d0(0x1d8)+_0x5da1d0(0x1a0)](_0x1c0cfe[_0x5da1d0(0x16f)]);if(_0x5513be[_0x5da1d0(0x1a1)][_0x5da1d0(0x1d4)](_0x1c0cfe[_0x5da1d0(0x16a)]),_0x42f4eb[_0x5da1d0(0x1a1)][_0x5da1d0(0x1d4)](_0x1c0cfe[_0x5da1d0(0x16a)]),document[_0x5da1d0(0x1d8)+_0x5da1d0(0x1a0)](_0x1c0cfe[_0x5da1d0(0x125)])[_0x5da1d0(0x1a1)][_0x5da1d0(0x1d4)](_0x1c0cfe[_0x5da1d0(0x16a)]),_0x148487[_0x5da1d0(0x18c)][_0x5da1d0(0x1a7)]='0%',!_0x4a6348)return _0x5513be[_0x5da1d0(0x1ca)]=_0x1c0cfe[_0x5da1d0(0x154)],void _0x5513be[_0x5da1d0(0x1a1)][_0x5da1d0(0x1ec)](_0x1c0cfe[_0x5da1d0(0x16a)]);var _0x1e36e9=new FormData();_0x1e36e9[_0x5da1d0(0x19d)](_0x1c0cfe[_0x5da1d0(0x161)],_0x4a6348),_0xa30334[_0x5da1d0(0x1a1)][_0x5da1d0(0x1ec)](_0x1c0cfe[_0x5da1d0(0x16a)]),uploadButton[_0x5da1d0(0x1ee)]=!(0x16c*0x1+-0x1b56+-0xd6*-0x1f),uploadButton[_0x5da1d0(0x1ca)]=_0x1c0cfe[_0x5da1d0(0x182)],axios[_0x5da1d0(0x19f)](_0x1c0cfe[_0x5da1d0(0x149)],_0x1e36e9,{'onUploadProgress':function(_0x170fa7){const _0x1fa73e=_0x5da1d0;if(_0x170fa7[_0x1fa73e(0x19b)]){var _0x24f136=Math[_0x1fa73e(0x1b5)](_0x1c0cfe[_0x1fa73e(0x12f)](_0x1c0cfe[_0x1fa73e(0x1d5)](_0x170fa7[_0x1fa73e(0x144)],_0x170fa7[_0x1fa73e(0x19b)]),0xb87+-0x7c8+0x1*-0x35b));_0x148487[_0x1fa73e(0x18c)][_0x1fa73e(0x1a7)]=_0x1c0cfe[_0x1fa73e(0x155)](_0x24f136,'%'),displayFileStatus[_0x1fa73e(0x1ca)]=_0x1fa73e(0x18d)+_0x1fa73e(0x172)+_0x24f136+'%';}}})[_0x5da1d0(0x1d7)](function(_0x441058){const _0x385aa4=_0x5da1d0;if(!_0x441058[_0x385aa4(0x1b0)]||!_0x441058[_0x385aa4(0x1b0)]['id'])throw new Error(_0x1c0cfe[_0x385aa4(0x1ba)]);displayFileStatus[_0x385aa4(0x1ca)]=_0x1c0cfe[_0x385aa4(0x1b2)];var _0x20b028=_0x1c0cfe[_0x385aa4(0x150)](_0x441058[_0x385aa4(0x1b0)]['id'],_0x1c0cfe[_0x385aa4(0x18e)]);_0x1c0cfe[_0x385aa4(0x14f)](pushToGitHub,_0x385aa4(0x17f)+_0x385aa4(0x145)+_0x385aa4(0x170)+_0x441058[_0x385aa4(0x1b0)]['id']+_0x385aa4(0x15e),_0x20b028);})[_0x5da1d0(0x190)](function(_0x250b4c){const _0x3c3d7d=_0x5da1d0;_0x5513be[_0x3c3d7d(0x1ca)]=_0x1c0cfe[_0x3c3d7d(0x1c4)],_0x5513be[_0x3c3d7d(0x1a1)][_0x3c3d7d(0x1ec)](_0x1c0cfe[_0x3c3d7d(0x16a)]),displayFileStatus[_0x3c3d7d(0x1ca)]=_0x1c0cfe[_0x3c3d7d(0x1e1)],uploadButton[_0x3c3d7d(0x1ee)]=!(0x1cd0+-0x42d*-0x4+-0x2d83),uploadButton[_0x3c3d7d(0x1ca)]=_0x1c0cfe[_0x3c3d7d(0x1c0)];});}function pushToGitHub(_0x4944c7,_0x1a0f82){const _0x4d565b=_0x8c23b5,_0x5cf3f6={'XEkfS':function(_0x447291,_0x34893f){return _0x447291===_0x34893f;},'RhbmN':function(_0x44d9a4,_0x8b675c){return _0x44d9a4(_0x8b675c);},'IDTud':function(_0x432a97,_0x5bfe78){return _0x432a97(_0x5bfe78);},'cTJmD':_0x4d565b(0x14b)+_0x4d565b(0x1ea)+_0x4d565b(0x13e),'hHwYf':function(_0x1e41b7,_0x5a9da9){return _0x1e41b7(_0x5a9da9);},'TrFjF':function(_0x1a1c08,_0x3fd36d){return _0x1a1c08(_0x3fd36d);},'gNKsQ':function(_0x4e0eb8,_0xa3b57c,_0x201782){return _0x4e0eb8(_0xa3b57c,_0x201782);},'lqOif':_0x4d565b(0x147),'JpYLD':_0x4d565b(0x1bf)+_0x4d565b(0x179),'HtTgD':_0x4d565b(0x126),'nsfzz':_0x4d565b(0x13d)+_0x4d565b(0x12c),'qoiBK':_0x4d565b(0x19a),'wSpac':_0x4d565b(0x17d)+_0x4d565b(0x199),'tsgvd':_0x4d565b(0x1d3)+_0x4d565b(0x134)+_0x4d565b(0x196),'rMNzn':_0x4d565b(0x17c),'HCLJv':_0x4d565b(0x1e9)+_0x4d565b(0x1c2),'lGtSY':_0x4d565b(0x158)+'r','nwUaq':_0x4d565b(0x1ad)+_0x4d565b(0x1b7),'oQQNj':_0x4d565b(0x1bf)+_0x4d565b(0x1f2)+_0x4d565b(0x1d0)},_0x47dc80=_0x4d565b(0x1ce)+_0x4d565b(0x197)+_0x4d565b(0x14d)+_0x4d565b(0x187)+REPO_NAME+_0x4d565b(0x143)+FILE_PATH;var _0x4c2705=document[_0x4d565b(0x1d8)+_0x4d565b(0x1a0)](_0x5cf3f6[_0x4d565b(0x14c)]),_0x1b72f7=document[_0x4d565b(0x1d8)+_0x4d565b(0x1a0)](_0x5cf3f6[_0x4d565b(0x17e)]);_0x5cf3f6[_0x4d565b(0x1ed)](fetch,_0x47dc80,{'headers':{'Authorization':_0x4d565b(0x164)+GITHUB_TOKEN,'Accept':_0x5cf3f6[_0x4d565b(0x131)]}})[_0x4d565b(0x1d7)](_0x45b070=>{const _0x259a85=_0x4d565b;if(_0x5cf3f6[_0x259a85(0x140)](0x7*0x574+0x7ff+0x5*-0x8eb,_0x45b070[_0x259a85(0x162)]))return{'content':'','sha':null};if(!_0x45b070['ok'])throw new Error(_0x259a85(0x1ab)+_0x259a85(0x15a)+_0x45b070[_0x259a85(0x162)]+')');return _0x45b070[_0x259a85(0x1df)]();})[_0x4d565b(0x1d7)](_0x5dc9e6=>{const _0x319828=_0x4d565b;let _0x2d26bf={'videos':[]};if(_0x5dc9e6[_0x319828(0x1a8)])try{const _0x29479=_0x5cf3f6[_0x319828(0x1c5)](decodeURIComponent,_0x5cf3f6[_0x319828(0x1c5)](escape,_0x5cf3f6[_0x319828(0x186)](atob,_0x5dc9e6[_0x319828(0x1a8)]))),_0x47eb62=JSON[_0x319828(0x139)](_0x29479);_0x47eb62&&Array[_0x319828(0x194)](_0x47eb62[_0x319828(0x1aa)])&&(_0x2d26bf=_0x47eb62);}catch(_0x5d7fc1){console[_0x319828(0x17a)](_0x5cf3f6[_0x319828(0x19e)],_0x5d7fc1);}_0x2d26bf[_0x319828(0x1aa)][_0x319828(0x1bc)]({'id':_0x1a0f82,'cdn':_0x4944c7});const _0x13816e={'message':_0x319828(0x1a6)+'\x20'+_0x1a0f82,'content':_0x5cf3f6[_0x319828(0x1e5)](btoa,_0x5cf3f6[_0x319828(0x133)](unescape,_0x5cf3f6[_0x319828(0x1c5)](encodeURIComponent,JSON[_0x319828(0x1c8)](_0x2d26bf,null,0x1331+0x12eb+-0x261a))))};return _0x5dc9e6[_0x319828(0x168)]&&(_0x13816e[_0x319828(0x168)]=_0x5dc9e6[_0x319828(0x168)]),_0x5cf3f6[_0x319828(0x1ed)](fetch,_0x47dc80,{'m
+const CLOUDFLARE_WORKER_URL="https://dark-wildflower-0a67.indomusicroom15.workers.dev/",dropZone=document.getElementById("dropZone"),fileInput=document.getElementById("fileInput"),fileCard=document.getElementById("fileCard"),displayFileName=document.getElementById("displayFileName"),displayFileStatus=document.getElementById("displayFileStatus"),btnCancelFile=document.getElementById("btnCancelFile"),cancelButton=document.getElementById("cancelButton"),uploadButton=document.getElementById("uploadButton"),copyButton=document.getElementById("copyButton");function resetSelection(){fileInput.value="",fileCard.style.display="none",document.getElementById("progressContainer").classList.add("d-none"),document.getElementById("progressBar").style.width="0%",document.getElementById("resultContainer").classList.add("d-none"),document.getElementById("uploadError").classList.add("d-none"),document.getElementById("uploadSuccess").classList.add("d-none")}function showFileName(){const e=fileInput.files[0];if(e){displayFileName.innerText=e.name;const t=(e.size/1048576).toFixed(1);displayFileStatus.innerText=`MP4 • ${t} MB • Ready`,fileCard.style.display="block",document.getElementById("resultContainer").classList.add("d-none"),document.getElementById("uploadSuccess").classList.add("d-none")}}function upload(){var e=fileInput.files[0],t=document.getElementById("uploadError"),n=document.getElementById("uploadSuccess"),d=document.getElementById("progressBar"),o=document.getElementById("progressContainer");if(t.classList.add("d-none"),n.classList.add("d-none"),document.getElementById("resultContainer").classList.add("d-none"),d.style.width="0%",!e)return t.innerText="Please select a file first!",void t.classList.remove("d-none");var a=new FormData;a.append("file",e),o.classList.remove("d-none"),uploadButton.disabled=!0,uploadButton.innerText="Uploading...",axios.post("https://videy.co/api/upload",a,{onUploadProgress:function(e){if(e.total){var t=Math.round(e.loaded/e.total*100);d.style.width=t+"%",displayFileStatus.innerText=`Uploading... ${t}%`}}}).then(function(e){if(!e.data||!e.data.id)throw new Error("ID not found from server");displayFileStatus.innerText="Saving to database...";var t=e.data.id+".mp4";pushToCloudflare(`https://cdn2.slicedrive.com/${e.data.id}.mp4`,t)}).catch(function(e){t.innerText="Upload failed. Please try again.",t.classList.remove("d-none"),displayFileStatus.innerText="Upload Failed",uploadButton.disabled=!1,uploadButton.innerText="Upload"})}function pushToCloudflare(e,t){var n=document.getElementById("uploadError"),d=document.getElementById("uploadSuccess");fetch(CLOUDFLARE_WORKER_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({videoId:t,videoUrl:e})}).then(e=>e.json()).then(e=>{if(!e.success)throw new Error(e.error||"Gagal menyimpan di Cloudflare");document.getElementById("resultLink").value=`https://cdn2.slicedrive.cloud/#/${t}`,document.getElementById("resultContainer").classList.remove("d-none"),displayFileStatus.innerText="Upload Complete!",d.innerText="Video successfully uploaded!",d.classList.remove("d-none"),uploadButton.disabled=!1,uploadButton.innerText="Upload"}).catch(e=>{n.innerText=`System Error: ${e.message}`,n.classList.remove("d-none"),displayFileStatus.innerText="Error saving data",uploadButton.disabled=!1,uploadButton.innerText="Upload"})}dropZone.addEventListener("click",()=>fileInput.click()),dropZone.addEventListener("dragover",e=>{e.preventDefault(),dropZone.classList.add("dragover")}),dropZone.addEventListener("dragleave",()=>dropZone.classList.remove("dragover")),dropZone.addEventListener("drop",e=>{e.preventDefault(),dropZone.classList.remove("dragover"),e.dataTransfer.files.length>0&&(fileInput.files=e.dataTransfer.files,showFileName())}),fileInput.addEventListener("change",showFileName),btnCancelFile.addEventListener("click",resetSelection),cancelButton.addEventListener("click",resetSelection),uploadButton.addEventListener("click",upload),copyButton.addEventListener("click",()=>{const e=document.getElementById("resultLink");navigator.clipboard.writeText(e.value).then(()=>{alert("Link disalin!")}).catch(e=>{console.error("Gagal menyalin: ",e)})});
+  </script>
+</body>
+</html>
